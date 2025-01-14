@@ -121,7 +121,7 @@ function displayQuestion(){
     answersDiv.innerHTML="";
     question.answers.forEach((answer,index) => {
         let answerButton=document.createElement('button');
-        answerButton.classList.add("btn","btn-light","me-2");
+        answerButton.classList.add("btn","btn-light","me-2","mb-2");
         answerButton.textContent=answer;
         answerButton.onclick=()=>checkAnswer(index);
         answersDiv.appendChild(answerButton);
